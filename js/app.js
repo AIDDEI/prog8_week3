@@ -19,7 +19,7 @@ let scoreText = document.createElement("p");
 scoreText.innerHTML = score;
 scoreDiv.appendChild(scoreText);
 
-featureExtractor.load("model.json");
+featureExtractor.load("model/model.json");
 
 const image = document.getElementById('output')
 const fileButton = document.querySelector("#file")
