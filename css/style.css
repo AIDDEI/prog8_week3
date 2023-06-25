@@ -1,16 +1,29 @@
 body {
     font-family: sans-serif;
+    text-align: center;
 }
 
 #label {
     width: 533px;
     height: 20px;
-    color: white;
-    background-color: black;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 
-button {
-    background-color: lightblue;
+.header {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 1, 127);
+    padding: 15px;
+    border: 5px solid rgb(159, 217, 238);
+}
+
+hr {
+    border: 2px solid rgb(159, 217, 238);
+}
+
+.button {
+    background-color: rgb(159, 217, 238);
     padding: 8px 12px;
     margin: 4px;
     font-size: 1em;
@@ -18,9 +31,9 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: darkblue;
-    color: white;
+.button:hover {
+    background-color: rgb(1, 1, 127);
+    color: rgb(255, 255, 255);
 }
 
 /* flip the video image */
@@ -29,6 +42,44 @@ video {
 }
 
 .image {
-    width: 400px;
-    float: right;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.imageContainer {
+    height: 250px;
+    width: 250px;
+    border: 5px solid rgb(1, 1, 127);
+    margin: auto;
+}
+
+/*Footer*/
+footer {
+    color: rgb(0, 0, 0);
+    background-color:  rgb(159, 217, 238);
+    border: 5px solid rgb(1, 1, 127);
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.socials div {
+    padding: 20px;
+}
+
+#copyright {
+    font-size: 12px;
+}
+
+.score {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 1, 127);
+    width: 40px;
+    height: 40px;
+    margin: auto;
 }
