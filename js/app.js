@@ -35,7 +35,13 @@ function userImageUploaded(){
     // Make a prediction with a selected image
     classifier.classify(document.getElementById('output'), (err, results) => {
     console.log(results);
-    speak(results[0].label);
+
+    if(results[0].label === "Lego Minifigure"){
+        speak("Dit is een LEGO minifiguur! Goed gedaan!");
+    } else {
+        speak("Dit is geen LEGO minifiguur helaas...")
+    }
+    
     updateScore(results[0].label);
   });
 }
